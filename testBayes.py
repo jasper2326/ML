@@ -15,4 +15,6 @@ for postinDoc in listPosts:
     trainMat.append(bayes.setOfWord2Vec(myVocabList, postinDoc))
 
 p0V, p1V, pAb = bayes.trainNB0(trainMat, listClasses)
-print p0V, p1V, pAb
+# print p0V, p1V, pAb
+
+bayes.testingNB()
